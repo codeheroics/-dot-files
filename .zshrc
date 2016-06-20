@@ -24,7 +24,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
 
-export LANG=en_us_8859_1
+export LANG=en_US.8859_1
 
 source ~/.nvm/nvm.sh
 fortune
