@@ -2,5 +2,5 @@
 
 ## Commands to run
 ```
-npm i -g git-recent
+npm i -g git-recent fkill-cli
 ```
