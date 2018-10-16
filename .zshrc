@@ -32,9 +32,9 @@ alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 # add support for preview ctrl+o to open selected file in VS Code
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 
-
 export LANG=en_US.8859_1
 
 source ~/.nvm/nvm.sh
 fortune
-cd dev
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
