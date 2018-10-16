@@ -2,6 +2,7 @@
 
 ## Commands to run
 ```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 sudo apt install bat ncdu
 npm i -g diff-so-fancy git-recent fkill-cli tldr
 sudo curl -o /usr/bin/prettyping https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping
