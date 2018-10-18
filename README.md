@@ -14,5 +14,5 @@ sudo mv noti /usr/bin
 ```
 ## Install manually
 
-https://hyper.is/#installation
-https://github.com/sharkdp/fd/releases
+* https://hyper.is/#installation
+* https://github.com/sharkdp/fd/releases
