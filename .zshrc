@@ -1,15 +1,21 @@
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="random"
+ZSH_THEME="agnoster"
 
-plugins=(git node npm bower z emotty battery)
-
-export PATH="$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-export MANPATH="/usr/local/man:$MANPATH"
-export ANDROID_HOME=/opt/android-sdk-linux
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+plugins=(git z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+
+setopt interactivecomments
+
+export NVM_DIR="/home/ffenril/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export ANDROID_HOME=${HOME}/Android/Sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
 
 alias s='git status'
 alias d='git diff'
@@ -29,12 +35,9 @@ alias ping='prettyping --nolegend'
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
-# add support for preview ctrl+o to open selected file in VS Code
-export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+function emulator { ( cd "$(dirname "$(whence -p emulator)")" && ./emulator "$@"; ) }
 
-export LANG=en_US.8859_1
-
-source ~/.nvm/nvm.sh
+. ~/.z.sh
 fortune
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
