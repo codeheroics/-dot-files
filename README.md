@@ -2,7 +2,7 @@
 
 ## Commands to run
 ```
-sudo apt install bat ncdu curl wget git
+sudo apt install bat ncdu curl wget git fortune
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # note: chsh / logout and login again for zsh as default shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | zsh
