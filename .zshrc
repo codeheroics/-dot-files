@@ -37,7 +37,6 @@ alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
 function emulator { ( cd "$(dirname "$(whence -p emulator)")" && ./emulator "$@"; ) }
 
-. ~/.z.sh
 fortune
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
