@@ -1,6 +1,5 @@
 [user]
 	name = Hugo Agbonon
-	email = hugo@agbonon.fr
 [alias]
 	co = checkout
 	ci = commit
