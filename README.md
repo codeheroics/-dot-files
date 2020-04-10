@@ -7,7 +7,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # note: chsh / logout and login again for zsh as default shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | zsh
 nvm install --lts
-npm i -g diff-so-fancy git-recent fkill-cli tldr
+npm i -g diff-so-fancy git-recent fkill-cli tldr git-checkout-interactive
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 sudo curl -o /usr/bin/prettyping https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping
 sudo chmod +x /usr/bin/prettyping
