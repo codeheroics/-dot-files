@@ -1,7 +1,7 @@
 # dotfiles
 
 ## Commands to run
-```
+```sh
 sudo apt install bat ncdu curl wget git fortune vim fonts-powerline
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # note: chsh / logout and login again for zsh as default shell
